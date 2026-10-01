@@ -6,10 +6,26 @@
   <meta name="theme-color" content="#F8D400" />
   <title>Torres Ferro e Aço | Ferro, Aço, Telhas e Soluções Sob Medida</title>
   <meta name="description" content="Torres Comércio de Ferro e Aço. Corte e dobra de precisão, telhas, barras, tubos, cantoneiras, vigas, chapa cartola sob medida e muito mais. Atendimento em Curitiba e região." />
+  
+  <meta property="og:title" content="Torres Ferro e Aço | Ferro, Aço, Telhas e Soluções Sob Medida">
+  <meta property="og:description" content="Corte e dobra de precisão, telhas, barras, tubos, cantoneiras, vigas, chapa cartola sob medida e muito mais.">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link rel="icon" href="https://raw.githubusercontent.com/brunoxsdkl/torres-ferro-aco/8e3b5765246070634f223fb7959d0d4ff0db5609/assets/logo.jpg" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">
+      <img src="https://raw.githubusercontent.com/brunoxsdkl/torres-ferro-aco/8e3b5765246070634f223fb7959d0d4ff0db5609/assets/logo.jpg" alt="">
+      <span>TORRES</span>
+    </div>
+  </div>
+
   <div class="utility-bar">
     <div class="container utility-inner">
       <div class="utility-social">
@@ -26,6 +42,7 @@
       </a>
     </div>
   </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
   <header class="topbar" id="inicio">
     <div class="container nav">
       <a class="brand" href="#inicio" aria-label="Torres Ferro e Aço">
@@ -83,6 +100,10 @@
           </div>
         </div>
       </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Role para baixo</span>
+        <div class="scroll-arrow"></div>
+      </div>
       <div class="ticker">
         <div>Ferro e aço • Telhas • Tubos • Barras • Cantoneiras • Vigas • Corte e dobra • Chapa cartola • Suporte de corrimão •</div>
       </div>
@@ -99,7 +120,7 @@
 
     <section class="section company" id="empresa">
       <div class="container split">
-        <div class="section-copy reveal">
+        <div class="section-copy reveal reveal-left">
           <span class="eyebrow dark">QUEM SOMOS</span>
           <h2>Parceira de quem <mark>faz acontecer.</mark></h2>
           <p>A Torres Comércio de Ferro e Aço atende profissionais, serralherias, empresas e clientes que precisam de materiais confiáveis e soluções práticas para tirar projetos do papel.</p>
@@ -111,12 +132,12 @@
           </div>
         </div>
         <div class="company-materials" aria-label="Materiais Torres Ferro e Aço">
-          <article class="company-material reveal"><img src="assets/company-tubos.webp" alt="Tubos de aço" loading="lazy"><span class="material-number">01</span><div><h3>Tubos</h3><p>Redondos, quadrados e retangulares</p></div></article>
-          <article class="company-material reveal"><img src="assets/company-barras.webp" alt="Barras de aço" loading="lazy"><span class="material-number">02</span><div><h3>Barras</h3><p>Lisas e nervuradas</p></div></article>
-          <article class="company-material reveal"><img src="assets/company-cantoneiras.webp" alt="Cantoneiras de aço" loading="lazy"><span class="material-number">03</span><div><h3>Cantoneiras</h3><p>Medidas e espessuras variadas</p></div></article>
-          <article class="company-material reveal"><img src="assets/company-vigas.webp" alt="Vigas de aço" loading="lazy"><span class="material-number">04</span><div><h3>Vigas</h3><p>Perfis I, U e H</p></div></article>
-          <article class="company-material reveal"><img src="assets/company-chapas.webp" alt="Chapas de aço" loading="lazy"><span class="material-number">05</span><div><h3>Chapas</h3><p>Lisas, xadrez e galvanizadas</p></div></article>
-          <article class="company-material reveal"><img src="assets/company-perfis.webp" alt="Perfis de aço" loading="lazy"><span class="material-number">06</span><div><h3>Perfis</h3><p>U, C e especiais</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-tubos.webp" alt="Tubos de aço" loading="lazy"><span class="material-number">01</span><div><h3>Tubos</h3><p>Redondos, quadrados e retangulares</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-barras.webp" alt="Barras de aço" loading="lazy"><span class="material-number">02</span><div><h3>Barras</h3><p>Lisas e nervuradas</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-cantoneiras.webp" alt="Cantoneiras de aço" loading="lazy"><span class="material-number">03</span><div><h3>Cantoneiras</h3><p>Medidas e espessuras variadas</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-vigas.webp" alt="Vigas de aço" loading="lazy"><span class="material-number">04</span><div><h3>Vigas</h3><p>Perfis I, U e H</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-chapas.webp" alt="Chapas de aço" loading="lazy"><span class="material-number">05</span><div><h3>Chapas</h3><p>Lisas, xadrez e galvanizadas</p></div></article>
+          <article class="company-material reveal reveal-scale"><img src="assets/company-perfis.webp" alt="Perfis de aço" loading="lazy"><span class="material-number">06</span><div><h3>Perfis</h3><p>U, C e especiais</p></div></article>
         </div>
       </div>
     </section>
@@ -133,15 +154,15 @@
       <p>Produtos e serviços para quem constrói, fabrica e transforma. Encontre o que seu projeto precisa com o apoio da Torres.</p>
     </div>
     <div class="solutions-grid">
-      <article class="solution-card reveal">
+      <article class="solution-card reveal reveal-up">
         <img src="assets/solution-telhas.webp" alt="Telhas de aço empilhadas" loading="lazy">
         <div><span>01 / FABRICAÇÃO</span><h3>Telhas e coberturas</h3><p>Telhas de aço feitas para sua cobertura, com resistência e bom acabamento.</p><button class="quote-card-action" type="button" data-quote-product="Telhas e coberturas">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
-      <article class="solution-card reveal">
+      <article class="solution-card reveal reveal-up">
         <img src="assets/solution-corte-dobra.webp" alt="Máquina dobrando uma peça de aço" loading="lazy">
         <div><span>02 / SERVIÇO</span><h3>Corte e dobra</h3><p>Peças preparadas nas medidas do seu projeto, com precisão e agilidade.</p><button class="quote-card-action" type="button" data-quote-product="Corte e dobra">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
-      <article class="solution-card reveal">
+      <article class="solution-card reveal reveal-up">
         <img src="assets/solution-chapa-cartola.webp" alt="Perfis metálicos chapa cartola" loading="lazy">
         <div><span>03 / SOB MEDIDA</span><h3>Chapa cartola</h3><p>Perfis sob medida, prontos para facilitar a instalação na sua obra.</p><button class="quote-card-action" type="button" data-quote-product="Chapa cartola">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
@@ -173,18 +194,18 @@
           <p>Uma seleção ampla para construção, fabricação, manutenção e projetos sob medida.</p>
         </div>
         <div class="product-grid">
-          <article class="product-card reveal"><span>01</span><h3>Telhas e coberturas</h3><p>Resistência, durabilidade e ótimo acabamento para diferentes aplicações.</p><button type="button" data-quote-product="Telhas e coberturas">Solicitar cotação →</button></article>
-          <article class="product-card reveal"><span>02</span><h3>Tubos e barras</h3><p>Opções para estruturas, serralheria, fabricação e uso geral.</p><button type="button" data-quote-product="Tubos e barras">Solicitar cotação →</button></article>
-          <article class="product-card reveal"><span>03</span><h3>Cantoneiras e vigas</h3><p>Perfis para projetos estruturais, reforços e soluções profissionais.</p><button type="button" data-quote-product="Cantoneiras e vigas">Solicitar cotação →</button></article>
-          <article class="product-card reveal"><span>04</span><h3>Chapas e perfis</h3><p>Materiais versáteis para fabricação, acabamento e projetos personalizados.</p><button type="button" data-quote-product="Chapas e perfis">Solicitar cotação →</button></article>
-          <article class="product-card reveal"><span>05</span><h3>Suporte de corrimão</h3><p>Peças para serralherias e obras, com opção para pedidos em volume.</p><button type="button" data-quote-product="Suporte de corrimão">Solicitar cotação →</button></article>
+          <article class="product-card reveal reveal-up"><span>01</span><h3>Telhas e coberturas</h3><p>Resistência, durabilidade e ótimo acabamento para diferentes aplicações.</p><button type="button" data-quote-product="Telhas e coberturas">Solicitar cotação →</button></article>
+          <article class="product-card reveal reveal-up"><span>02</span><h3>Tubos e barras</h3><p>Opções para estruturas, serralheria, fabricação e uso geral.</p><button type="button" data-quote-product="Tubos e barras">Solicitar cotação →</button></article>
+          <article class="product-card reveal reveal-up"><span>03</span><h3>Cantoneiras e vigas</h3><p>Perfis para projetos estruturais, reforços e soluções profissionais.</p><button type="button" data-quote-product="Cantoneiras e vigas">Solicitar cotação →</button></article>
+          <article class="product-card reveal reveal-up"><span>04</span><h3>Chapas e perfis</h3><p>Materiais versáteis para fabricação, acabamento e projetos personalizados.</p><button type="button" data-quote-product="Chapas e perfis">Solicitar cotação →</button></article>
+          <article class="product-card reveal reveal-up"><span>05</span><h3>Suporte de corrimão</h3><p>Peças para serralherias e obras, com opção para pedidos em volume.</p><button type="button" data-quote-product="Suporte de corrimão">Solicitar cotação →</button></article>
         </div>
       </div>
     </section>
 
     <section class="section benefits" id="diferenciais">
       <div class="container">
-        <div class="benefit-box reveal">
+        <div class="benefit-box reveal reveal-up">
           <div><span>01</span><h3>Atendimento direto</h3><p>Agilidade para entender o que você precisa e orientar sua compra.</p></div>
           <div><span>02</span><h3>Qualidade profissional</h3><p>Produtos e serviços pensados para quem não pode perder tempo.</p></div>
           <div><span>03</span><h3>Condições especiais</h3><p>PIX à vista com 5% de desconto e cartão em até 3x sem juros.</p></div>
@@ -318,5 +339,8 @@
     <img src="assets/mascote-whatsapp.webp" alt="" />
   </a>
 
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 </body>
 </html>
